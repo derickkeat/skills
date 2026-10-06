@@ -24,6 +24,6 @@ for skill in "${skills[@]}"; do
     rm -r -- "$destination"
     printf 'Removed identical copy at %s\n' "$destination"
   fi
-  ln -sfnT -- "$source" "$destination"
+  ln -sfn -- "$source" "$destination"
   printf 'Linked %s -> %s\n' "$destination" "$source"
 done
